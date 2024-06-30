@@ -6,7 +6,7 @@ import datetime
 import tkinter as tk # GUIでアプリを作ることができるモジュール
 
 # 時間を処理する部分を関数で実装
-def update_time():
+def update_time(): # 今の時間の更新
     now = datetime.datetime.now()
     current_time = now.strftime("%Y年%m月%d日　%H時%M分%S秒") # 日本語表示
     #
@@ -23,6 +23,6 @@ lbl.config(text="", font=("Helvetica" , 20))
 lbl.pack()
 
 # 関数の呼び出し
-update_time()
+update_time() # 時間の更新
 
 root.mainloop() # 終わりのおまじない
